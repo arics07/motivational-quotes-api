@@ -1,0 +1,45 @@
+1. Inicializar el proyecto con Npm
+npm init -y
+(Se crea el package.json)
+
+2. Instalar las dependencias
+npm install express
+
+dependencias de desarrollo
+npm install -D typescript ts-node ts-node-dev @types/express
+
+3. Crear y configurar tsconfig.json
+crear:
+npx tsc --init
+
+configurar:
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
+
+4. Creo la carpeta src que contiene
+- index.ts
+- controllers
+- database
+- middlewares
+- routes
+
+5. En el archivo package.json cambiamos scripts por:
+{"start": "ts-node src/index.ts",
+"dev": "ts-node-dev src/index.ts" }
+
+en author podemos poner nuestro nombre
+en descripción podemos agregar una descripción personalizada
+
+6. Orden
+database
+model (acá está la lógica más pesada)
+controller

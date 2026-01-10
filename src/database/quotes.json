@@ -1,0 +1,15 @@
+{
+    "info": {
+        "name": "Quotes Database",
+        "version": 1.0,
+        "total": 1 
+    },
+
+    "quotes": [
+        {
+            "id": 1,
+            "text": "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
+            "author": "Anónimo"
+        }
+    ]
+}
